@@ -31,3 +31,7 @@ def X_i(w):
     
     return ((1j*w)**2 - 2 + 2*(1+1j*w)*np.exp(-1j*w)) / (1j*w)**3
 
+
+X_g = np.vectorize(X_g, otypes=[complex])
+X_i = np.vectorize(X_i, otypes=[complex])
+
